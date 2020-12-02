@@ -1,0 +1,27 @@
+<? foreach ($data['posts'] as $post): ?>
+<article>
+    <header>
+        <div class=time>
+            <div class=year><? echo $post['year'] ?></div>
+            <div class=date><? echo $post['day'] ?><span><? echo $post['month'] ?></span></div>
+        </div>
+        <h1><? echo $post['title'] ?></h1>
+        <div class=comments><? echo $post['id'] ?></div>
+    </header>
+    <p><? echo $post['text'] ?></p>
+    <footer>
+        <em>Written by:</em> <strong><? echo $post['author'] ?></strong>
+            <span class=newLine><em>Tags:</em>
+                <? if(!count($post['tags'])): ?>
+                    <a class=tags href=#>Список тегов пуст!</a>
+                <? else: ?>
+                <? foreach($post['tags'] as $tag): ?>
+                    <a class=tags href=#><? echo $tag ?></a>
+                <? endforeach ?>
+                <? endif ?>
+            </span>
+        <a class=button href="?page=post&id=<?echo $post['id']?>">Continue Reading</a>
+    </footer>
+</article>
+<? endforeach ?>
+<? echo $data['pagination'] ?>
