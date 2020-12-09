@@ -4,10 +4,6 @@ require 'bootstrap.php';
 
 <html lang=en>
 <link href=../alt_styles.css rel=stylesheet />
-<!--
-<link rel="stylesheet" href="dark.scss">
-<script src="sweetalert2.js"></script>
--->
 
     <head>
         <title>Registration</title>
@@ -38,7 +34,6 @@ require 'bootstrap.php';
                             <input type="password" class="form-control" id="repeat-password" name="repeat-password" placeholder="Confirm password">
                             <div class="form-control-feedback"></div>
                         </div>
-                        <!--<button type="submit" class="btn btn-primary">Зарегистрироваться</button>-->
                         <div class="wrapper" style="font-size:1.5em; margin-top: 2em; margin-bottom: 2em">
                             <button type="submit" class="bouncy">Register</button>
                         </div>
@@ -81,6 +76,5 @@ require 'bootstrap.php';
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="form.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>-->
     </body>
 </html>

@@ -2,5 +2,5 @@
 
 session_start();
 
-include '../registration/db.php';
-include '../registration/functions.php';
+include 'db.php';
+include 'functions.php';
